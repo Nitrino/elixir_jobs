@@ -17,6 +17,8 @@ defmodule ElixirJobsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    resources "/offers", OfferController
   end
 
   # Other scopes may use custom stacks.

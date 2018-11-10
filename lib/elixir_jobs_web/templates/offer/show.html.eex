@@ -1,0 +1,53 @@
+<h1>Show Offer</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @offer.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @offer.description %>
+  </li>
+
+  <li>
+    <strong>City:</strong>
+    <%= @offer.city %>
+  </li>
+
+  <li>
+    <strong>Company:</strong>
+    <%= @offer.company %>
+  </li>
+
+  <li>
+    <strong>Job type:</strong>
+    <%= @offer.job_type %>
+  </li>
+
+  <li>
+    <strong>Job place:</strong>
+    <%= @offer.job_place %>
+  </li>
+
+  <li>
+    <strong>Contacts:</strong>
+    <%= @offer.contacts %>
+  </li>
+
+  <li>
+    <strong>Salary:</strong>
+    <%= @offer.salary %>
+  </li>
+
+  <li>
+    <strong>Is approved:</strong>
+    <%= @offer.is_approved %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.offer_path(@conn, :edit, @offer) %></span>
+<span><%= link "Back", to: Routes.offer_path(@conn, :index) %></span>
