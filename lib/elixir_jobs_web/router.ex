@@ -19,6 +19,7 @@ defmodule ElixirJobsWeb.Router do
     get "/", PageController, :index
 
     resources "/offers", OfferController
+    resources "/events", EventController
   end
 
   # Other scopes may use custom stacks.

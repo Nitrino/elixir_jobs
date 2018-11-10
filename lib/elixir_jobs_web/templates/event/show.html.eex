@@ -1,0 +1,38 @@
+<h1>Show Event</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @event.title %>
+  </li>
+
+  <li>
+    <strong>Place:</strong>
+    <%= @event.place %>
+  </li>
+
+  <li>
+    <strong>Begin date:</strong>
+    <%= @event.begin_date %>
+  </li>
+
+  <li>
+    <strong>Link:</strong>
+    <%= @event.link %>
+  </li>
+
+  <li>
+    <strong>Logo:</strong>
+    <%= @event.logo %>
+  </li>
+
+  <li>
+    <strong>Is approved:</strong>
+    <%= @event.is_approved %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.event_path(@conn, :edit, @event) %></span>
+<span><%= link "Back", to: Routes.event_path(@conn, :index) %></span>
