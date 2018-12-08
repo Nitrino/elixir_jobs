@@ -29,8 +29,35 @@ module.exports = (env, options) => ({
         }
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'style-loader'
+          },
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {}
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins() {
+                return [
+                  require("autoprefixer")
+                ];
+              }
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: [
+                path.join(__dirname, 'node_modules/normalize-scss/sass')
+              ]
+            }
+          }
+        ]
       }
     ]
   },

@@ -1,0 +1,31 @@
+<section class="hero">
+    <div class="container">
+        <header class="header">
+            <%= link(gettext("Elixir jobs"), to: Routes.page_path(@conn, :index), class: "header__logo") %>
+            <div class="header__navigation">
+                <%= link(gettext("О проекте"), to: "/about", class: "header__navigation__about") %>
+                <div class="header__navigation__social_networks">
+                    <%= link to: "https://twitter.com/ErlangJobs", target: "_blank", rel: "noopener noreferrer nofollow" do %>
+                        <%= img_tag(Routes.static_path(@conn, "/images/icons/twitter.svg")) %>
+                    <% end %>
+                    <%= link to: "https://t.me/elixirjobs", target: "_blank", rel: "noopener noreferrer nofollow" do %>
+                        <%= img_tag(Routes.static_path(@conn, "/images/icons/telegram.svg")) %>
+                    <% end %>
+                    <%= link to: "/rss", target: "_blank" do %>
+                        <%= img_tag(Routes.static_path(@conn, "/images/icons/rss.svg")) %>
+                    <% end %>
+                </div>
+            </div>
+        </header>
+        <div class="hero__content">
+            <div class="hero__title"><%= gettext("Elixir jobs") %></div>
+            <div class="hero__subtitle"><%= gettext("Публикация совершенно бесплатна и не требует регистрации.") %></div>
+            <div class="hero__new_offer">
+                <%= link(gettext("Добавить вакансию"), to: Routes.offer_path(@conn, :new), class: "btn -primary") %>
+            </div>
+            <div class="hero__new_event">
+                <%= link(gettext("или предложить событие"), to: Routes.event_path(@conn, :new)) %>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,82 @@
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.hero {
+  padding-bottom: 60px;
+  color: #FFFFFF;
+  background: linear-gradient(119.5deg, #5C18BF 8.99%, #B224EF 77.27%);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    &__logo {
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    &__navigation {
+      display: flex;
+      align-items: center;
+
+      &__about {
+        margin-right: 52px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+      }
+
+      &__social_networks {
+        a {
+          margin-right: 20px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 80px;
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  &__new_offer {
+    margin-top: 26px;
+  }
+
+  &__new_event {
+    margin-top: 10px;
+
+    a {
+      color: #FFFFFF;
+      opacity: 0.6;
+      text-decoration: underline;
+    }
+  }
+}
