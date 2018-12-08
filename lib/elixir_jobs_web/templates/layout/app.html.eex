@@ -10,13 +10,12 @@
   </head>
   <body>
     <%= render ElixirJobsWeb.SharedView, "_hero.html", conn: @conn %>
-    <div class="container">
-      <main role="main" class="container">
-        <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-        <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-        <%= render @view_module, @view_template, assigns %>
-      </main>
-    </div>
+    <%= render ElixirJobsWeb.SharedView, "_promotion.html", conn: @conn %>
+    <main role="main" class="container">
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <%= render @view_module, @view_template, assigns %>
+    </main>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

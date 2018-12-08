@@ -16,7 +16,7 @@ defmodule ElixirJobsWeb.Router do
   scope "/", ElixirJobsWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", OfferController, :index
 
     resources "/offers", OfferController
     resources "/events", EventController

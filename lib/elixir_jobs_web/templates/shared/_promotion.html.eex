@@ -1,0 +1,13 @@
+<div class="promotion">
+  <div class="container">
+    <div class="promotion__content">
+      <div class="promotion__text">
+        <%= gettext("Будь в курсе последних вакансий с нашим Telegram каналом") %>
+      </div>
+      <%= link to: "https://t.me/elixirjobs", target: "_blank", rel: "noopener noreferrer nofollow", class: "promotion__button btn -rounded" do %>
+        <%= gettext("Подписаться") %>
+        <%= img_tag(Routes.static_path(@conn, "/images/icons/telegram.svg")) %>
+      <% end %>
+    </div>
+  </div>
+</div>

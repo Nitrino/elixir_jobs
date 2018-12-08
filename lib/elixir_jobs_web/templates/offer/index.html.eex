@@ -1,42 +1,45 @@
-<h1>Listing Offers</h1>
+<section class="offers">
+  <h1>Listing Offers</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>City</th>
-      <th>Company</th>
-      <th>Job type</th>
-      <th>Job place</th>
-      <th>Contacts</th>
-      <th>Salary</th>
-      <th>Is approved</th>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>City</th>
+        <th>Company</th>
+        <th>Job type</th>
+        <th>Job place</th>
+        <th>Contacts</th>
+        <th>Salary</th>
+        <th>Is approved</th>
 
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-<%= for offer <- @offers do %>
-    <tr>
-      <td><%= offer.title %></td>
-      <td><%= offer.description %></td>
-      <td><%= offer.city %></td>
-      <td><%= offer.company %></td>
-      <td><%= offer.job_type %></td>
-      <td><%= offer.job_place %></td>
-      <td><%= offer.contacts %></td>
-      <td><%= offer.salary %></td>
-      <td><%= offer.is_approved %></td>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+  <%= for offer <- @offers do %>
+      <tr>
+        <td><%= offer.title %></td>
+        <td><%= offer.description %></td>
+        <td><%= offer.city %></td>
+        <td><%= offer.company %></td>
+        <td><%= offer.job_type %></td>
+        <td><%= offer.job_place %></td>
+        <td><%= offer.contacts %></td>
+        <td><%= offer.salary %></td>
+        <td><%= offer.is_approved %></td>
 
-      <td>
-        <%= link "Show", to: Routes.offer_path(@conn, :show, offer) %>
-        <%= link "Edit", to: Routes.offer_path(@conn, :edit, offer) %>
-        <%= link "Delete", to: Routes.offer_path(@conn, :delete, offer), method: :delete, data: [confirm: "Are you sure?"] %>
-      </td>
-    </tr>
-<% end %>
-  </tbody>
-</table>
+        <td>
+          <%= link "Show", to: Routes.offer_path(@conn, :show, offer) %>
+          <%= link "Edit", to: Routes.offer_path(@conn, :edit, offer) %>
+          <%= link "Delete", to: Routes.offer_path(@conn, :delete, offer), method: :delete, data: [confirm: "Are you sure?"] %>
+        </td>
+      </tr>
+  <% end %>
+    </tbody>
+  </table>
 
-<span><%= link "New Offer", to: Routes.offer_path(@conn, :new) %></span>
+  <span><%= link "New Offer", to: Routes.offer_path(@conn, :new) %></span>
+</section>
+

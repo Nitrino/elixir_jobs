@@ -1,0 +1,25 @@
+.promotion {
+  border-bottom: 1px solid #C4C4C4;
+
+  &__content {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    margin-right: 11px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 13px;
+      height: 13px;
+      margin-left: 5px;
+    }
+  }
+}

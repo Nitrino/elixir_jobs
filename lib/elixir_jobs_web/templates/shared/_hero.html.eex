@@ -1,7 +1,7 @@
 <section class="hero">
     <div class="container">
         <header class="header">
-            <%= link(gettext("Elixir jobs"), to: Routes.page_path(@conn, :index), class: "header__logo") %>
+            <%= link(gettext("Elixir jobs"), to: Routes.offer_path(@conn, :index), class: "header__logo") %>
             <div class="header__navigation">
                 <%= link(gettext("О проекте"), to: "/about", class: "header__navigation__about") %>
                 <div class="header__navigation__social_networks">
