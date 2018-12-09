@@ -1,3 +1,5 @@
+<%= render ElixirJobsWeb.EventView, "index.html", conn: @conn, events: @events %>
+
 <section class="offers">
   <h1>Listing Offers</h1>
 

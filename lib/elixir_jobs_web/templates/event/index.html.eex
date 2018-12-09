@@ -1,36 +1,28 @@
-<h1>Listing Events</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Place</th>
-      <th>Begin date</th>
-      <th>Link</th>
-      <th>Logo</th>
-      <th>Is approved</th>
-
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-<%= for event <- @events do %>
-    <tr>
-      <td><%= event.title %></td>
-      <td><%= event.place %></td>
-      <td><%= event.begin_date %></td>
-      <td><%= event.link %></td>
-      <td><%= event.logo %></td>
-      <td><%= event.is_approved %></td>
-
-      <td>
-        <%= link "Show", to: Routes.event_path(@conn, :show, event) %>
-        <%= link "Edit", to: Routes.event_path(@conn, :edit, event) %>
-        <%= link "Delete", to: Routes.event_path(@conn, :delete, event), method: :delete, data: [confirm: "Are you sure?"] %>
-      </td>
-    </tr>
-<% end %>
-  </tbody>
-</table>
-
-<span><%= link "New Event", to: Routes.event_path(@conn, :new) %></span>
+<div class="events">
+  <div class="title">
+    <%= gettext("Предстоящие события") %>
+  </div>
+  <div class="events__items">
+    <%= for event <- @events do %>
+      <%= link to: Routes.event_path(@conn, :show, event), class: "events__item" do %>
+        <div class="events__item__logo">
+          <%= img_tag(event.logo) %>
+        </div>
+        <div class="events__item__description">
+          <div class="events__item__description__title">
+            <%= event.title %>
+          </div>
+          <div class="events__item__description__place">
+            <%= event.place %>
+          </div>
+          <div class="events__item__description__date">
+            <%= format_begin_date(event.begin_date) %>
+          </div>
+          <div class="events__item__description__time">
+            <%= format_begin_time(event.begin_date) %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

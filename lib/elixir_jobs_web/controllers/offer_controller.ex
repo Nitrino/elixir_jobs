@@ -2,11 +2,13 @@ defmodule ElixirJobsWeb.OfferController do
   use ElixirJobsWeb, :controller
 
   alias ElixirJobs.Offers
+  alias ElixirJobs.Events
   alias ElixirJobs.Offers.Offer
 
   def index(conn, _params) do
     offers = Offers.list_offers()
-    render(conn, "index.html", offers: offers)
+    events = Events.list_events()
+    render(conn, "index.html", offers: offers, events: events)
   end
 
   def new(conn, _params) do
