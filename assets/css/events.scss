@@ -11,8 +11,9 @@
   }
 
   &__item {
+    padding: 15px;
     display: flex;
-    flex: 1 580px;
+    flex: 0 580px;
     align-items: center;
     margin: 0 0 20px 20px;
     border: 1px solid #CCB7EB;
@@ -22,7 +23,7 @@
     &__logo {
       width: 180px;
       margin-right: 20px;
-      padding: 30px 14px;
+      padding: 15px;
 
       img {
         width: 100%;
