@@ -1,2 +1,69 @@
 .offers {
+  margin: 30px 0;
+
+  &__items {
+    border-top: 1px solid #C4C4C4;
+  }
+
+  &__item {
+    padding: 25px 0;
+    display: flex;
+    border-bottom: 1px solid #C4C4C4;
+    font-size: 14px;
+    color: #1F1F1F;
+
+    &__main_info {
+      flex: 1;
+      margin-right: 60px;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 18px;
+      color: #5C18BF;
+    }
+
+    &__place {
+      > div {
+        display: inline;
+        font-weight: 300;
+      }
+
+      &__dot {
+        margin: 0 4px;
+      }
+    }
+
+    &__description {
+      margin-top: 16px;
+      font-size: 14px;
+      color: #1F1F1F;
+    }
+
+    &__date {
+      font-weight: 300;
+    }
+
+    &__salary {
+      margin-top: 10px;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    &__options {
+      text-align: right;
+    }
+
+    &__badges {
+      margin-top: 7px;
+
+      > div {
+        display: inline-block;
+      }
+
+      &__job_place {
+        margin-right: 10px;
+      }
+    }
+  }
 }

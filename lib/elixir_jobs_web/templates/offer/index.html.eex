@@ -1,47 +1,44 @@
 <%= render ElixirJobsWeb.EventView, "index.html", conn: @conn, events: @events %>
 
 <section class="offers">
-  <h1>Listing Offers</h1>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Description</th>
-        <th>City</th>
-        <th>Company</th>
-        <th>Job type</th>
-        <th>Job place</th>
-        <th>Contacts</th>
-        <th>Salary</th>
-        <th>Is approved</th>
-
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-  <%= for offer <- @offers do %>
-      <tr>
-        <td><%= offer.title %></td>
-        <td><%= offer.description %></td>
-        <td><%= offer.city %></td>
-        <td><%= offer.company %></td>
-        <td><%= offer.job_type %></td>
-        <td><%= offer.job_place %></td>
-        <td><%= offer.contacts %></td>
-        <td><%= offer.salary %></td>
-        <td><%= offer.is_approved %></td>
-
-        <td>
-          <%= link "Show", to: Routes.offer_path(@conn, :show, offer) %>
-          <%= link "Edit", to: Routes.offer_path(@conn, :edit, offer) %>
-          <%= link "Delete", to: Routes.offer_path(@conn, :delete, offer), method: :delete, data: [confirm: "Are you sure?"] %>
-        </td>
-      </tr>
-  <% end %>
-    </tbody>
-  </table>
-
-  <span><%= link "New Offer", to: Routes.offer_path(@conn, :new) %></span>
+  <div class="offers__items">
+    <%= for offer <- @offers do %>
+      <%= link to: Routes.offer_path(@conn, :show, offer), class: "offers__item" do %>
+        <div class="offers__item__main_info">
+          <div class="offers__item__title">
+            <%= offer.title %>
+          </div>
+          <div class="offers__item__place">
+            <div class="offers__item__place__company">
+              <%= offer.company %>
+            </div>
+            <div class="offers__item__place__dot">•</div>
+            <div class="offers__item__place__city">
+              <%= offer.city %>
+            </div>
+          </div>
+          <div class="offers__item__description">
+            <%= offer.description %>
+          </div>
+        </div>
+        <div class="offers__item__options">
+          <div class="offers__item__date">
+            <%= format_date(offer.inserted_at) %>
+          </div>
+          <div class="offers__item__salary">
+            <%= offer.salary %>
+          </div>
+          <div class="offers__item__badges">
+            <div class="offers__item__badges__job_place badge -light">
+              <%= offer.job_place %>
+            </div>
+            <div class="offers__item__badges__job_type badge -dark">
+              <%= offer.job_type %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 </section>
 
