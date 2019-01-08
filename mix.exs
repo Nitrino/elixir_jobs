@@ -44,7 +44,11 @@ defmodule ElixirJobs.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
 
-      {:timex, "~> 3.4"}
+      {:timex, "~> 3.4"},
+
+      # Pagination
+      {:scrivener_ecto, "~> 2.0"},
+      {:scrivener_html, "~> 1.0", override: true}
     ]
   end
 

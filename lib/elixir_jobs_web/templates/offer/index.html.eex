@@ -39,6 +39,7 @@
         </div>
       <% end %>
     <% end %>
+    <%= pagination_links @offers %>
   </div>
 </section>
 

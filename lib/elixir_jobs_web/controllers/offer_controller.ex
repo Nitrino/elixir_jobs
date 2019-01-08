@@ -5,8 +5,8 @@ defmodule ElixirJobsWeb.OfferController do
   alias ElixirJobs.Events
   alias ElixirJobs.Offers.Offer
 
-  def index(conn, _params) do
-    offers = Offers.list_offers()
+  def index(conn, params) do
+    offers = Offers.list_offers(params)
     events = Events.list_events()
     render(conn, "index.html", offers: offers, events: events)
   end

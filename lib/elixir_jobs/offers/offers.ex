@@ -7,6 +7,8 @@ defmodule ElixirJobs.Offers do
   alias ElixirJobs.Repo
 
   alias ElixirJobs.Offers.Offer
+  alias ElixirJobs.Offers.Queries.Offer, as: OfferQuery
+
 
   @doc """
   Returns the list of offers.
@@ -17,8 +19,11 @@ defmodule ElixirJobs.Offers do
       [%Offer{}, ...]
 
   """
-  def list_offers do
-    Repo.all(Offer)
+  def list_offers(params) do
+    Offer
+    |> OfferQuery.approved()
+    |> OfferQuery.order_id_desc()
+    |> Repo.paginate(params)
   end
 
   @doc """
