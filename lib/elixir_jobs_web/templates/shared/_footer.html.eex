@@ -1,0 +1,38 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__body">
+      <div class="footer__description">
+        <p>
+          <%= raw gettext("Если у вас есть предложения или вопросы, создайте тикет на %{github_link}.",
+            github_link: safe_to_string(link("GitHub", to: "https://github.com/Nitrino/elixir_jobs/issues/new",
+              target: "_blank", rel: "noopener noreferrer nofollow"))
+          ) %>
+        </p>
+        <p>
+          <%= raw gettext("Powered by %{elixir_link} and %{phoenix_link}.",
+            elixir_link: safe_to_string(link("Elixir", to: "https://elixir-lang.org", target: "_blank",
+              rel: "noopener noreferrer nofollow")),
+            phoenix_link: safe_to_string(link("Phoenix", to: "https://phoenixframework.org", target: "_blank",
+              rel: "noopener noreferrer nofollow"))
+          ) %>
+        </p>
+      </div>
+      <div class="footer__social_networks">
+        <div class="footer__social_networks__title">
+            <%= gettext("Быть в курсе последних вакансий") %>
+        </div>
+        <div class="footer__social_networks__links">
+            <%= link to: "https://twitter.com/ErlangJobs", target: "_blank", rel: "noopener noreferrer nofollow" do %>
+                <%= img_tag(Routes.static_path(@conn, "/images/icons/twitter.svg")) %>
+            <% end %>
+            <%= link to: "https://t.me/elixirjobs", target: "_blank", rel: "noopener noreferrer nofollow" do %>
+                <%= img_tag(Routes.static_path(@conn, "/images/icons/telegram.svg")) %>
+            <% end %>
+            <%= link to: "/rss", target: "_blank" do %>
+                <%= img_tag(Routes.static_path(@conn, "/images/icons/rss.svg")) %>
+            <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
