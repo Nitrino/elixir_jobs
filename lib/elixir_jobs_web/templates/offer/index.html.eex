@@ -1,25 +1,27 @@
-<%= render ElixirJobsWeb.EventView, "index.html", conn: @conn, events: @events %>
+<%= if Enum.any?(@events) do %>
+    <%= render ElixirJobsWeb.EventView, "index.html", conn: @conn, events: @events %>
+<% end %>
 
 <section class="offers">
   <div class="offers__items">
     <%= for offer <- @offers do %>
       <%= link to: Routes.offer_path(@conn, :show, offer), class: "offers__item" do %>
         <div class="offers__item__main_info">
-          <div class="offers__item__title">
-            <%= offer.title %>
-          </div>
-          <div class="offers__item__place">
-            <div class="offers__item__place__company">
-              <%= offer.company %>
+            <div class="offers__item__title">
+                <%= offer.title %>
             </div>
-            <div class="offers__item__place__dot">•</div>
-            <div class="offers__item__place__city">
-              <%= offer.city %>
+            <div class="offers__item__place">
+                <div class="offers__item__place__company">
+                    <%= offer.company %>
+                </div>
+                <div class="offers__item__place__dot">•</div>
+                <div class="offers__item__place__city">
+                <%= offer.city %>
+                </div>
             </div>
-          </div>
-          <div class="offers__item__description">
-            <%= offer.description %>
-          </div>
+            <div class="offers__item__description">
+                <%= offer.description %>
+            </div>
         </div>
         <div class="offers__item__options">
           <div class="offers__item__date">
@@ -30,10 +32,10 @@
           </div>
           <div class="offers__item__badges">
             <div class="offers__item__badges__job_place badge -light">
-              <%= offer.job_place %>
+                <%= offer.job_place %>
             </div>
             <div class="offers__item__badges__job_type badge -dark">
-              <%= offer.job_type %>
+                <%= offer.job_type %>
             </div>
           </div>
         </div>
