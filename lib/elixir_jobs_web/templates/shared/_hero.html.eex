@@ -20,12 +20,14 @@
         <div class="hero__content">
             <div class="hero__title"><%= gettext("Elixir jobs") %></div>
             <div class="hero__subtitle"><%= gettext("Публикация совершенно бесплатна и не требует регистрации.") %></div>
-            <div class="hero__new_offer">
-                <%= link(gettext("Добавить вакансию"), to: Routes.offer_path(@conn, :new), class: "btn -primary") %>
-            </div>
-            <div class="hero__new_event">
-                <%= link(gettext("или предложить событие"), to: Routes.event_path(@conn, :new)) %>
-            </div>
+            <%= if (show_new_offer_button(@conn)) do %>
+                <div class="hero__new_offer">
+                    <%= link(gettext("Добавить вакансию"), to: Routes.offer_path(@conn, :new), class: "btn -primary") %>
+                </div>
+                <div class="hero__new_event">
+                    <%= link(gettext("или предложить событие"), to: Routes.event_path(@conn, :new)) %>
+                </div>
+            <% end %>
         </div>
     </div>
 </section>
