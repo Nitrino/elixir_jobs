@@ -1,10 +1,14 @@
 /* This file is for your main application css. */
 
 @import "normalize/import-now";
+@import "~flatpickr/dist/flatpickr.css";
 @import "./common.scss";
 @import "./pagination.scss";
 @import "./hero.scss";
 @import "./footer.scss";
+@import "./form.scss";
 @import "./promotion.scss";
 @import "./offers.scss";
+@import "./offer_new.scss";
 @import "./events.scss";
+@import "./event_new.scss";

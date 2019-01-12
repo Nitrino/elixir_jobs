@@ -1,5 +1,14 @@
-<h1>New Event</h1>
-
-<%= render "form.html", Map.put(assigns, :action, Routes.event_path(@conn, :create)) %>
-
-<span><%= link "Back", to: Routes.event_path(@conn, :index) %></span>
+<div class="event_new">
+    <div class="title">
+        <%= gettext("Скоро будет интересное событие, посвященное Elixir или Erlang? ") %>
+    </div>
+    <div class="event_new__description">
+        <p>
+            <%= gettext("Сообщите нам об этом!") %>
+        </p>
+        <p>
+            <%= gettext("После заполнения формы предложенное вами мероприятие отправится на проверку модераторам и, если все заполнено верно, оно появится на главной странице сайта.") %>
+        </p>
+    </div>
+    <%= render "form.html", Map.put(assigns, :action, Routes.event_path(@conn, :create)) %>
+</div>

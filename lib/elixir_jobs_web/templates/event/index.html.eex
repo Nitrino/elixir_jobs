@@ -1,5 +1,5 @@
 <div class="events">
-  <div class="title">
+  <div class="title -center">
     <%= gettext("Предстоящие события") %>
   </div>
   <div class="events__items">

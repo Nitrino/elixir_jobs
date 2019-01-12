@@ -10,6 +10,18 @@ import css from "../css/app.scss"
 // Import dependencies
 //
 import "phoenix_html"
+import flatpickr from "flatpickr";
+import { Russian } from "flatpickr/dist/l10n/ru.js"
+
+flatpickr(".flatpickr", {
+  enableTime: true,
+  dateFormat: "Y-m-d H:i",
+  locale: Russian,
+  time_24hr: true
+});
+
+import customFileSelect from "./customFileSelect";
+customFileSelect("input.-file")
 
 // Import local files
 //

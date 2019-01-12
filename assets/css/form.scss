@@ -1,0 +1,104 @@
+.form {
+  margin-top: 30px;
+  padding-top: 40px;
+  border-top: 1px solid #C4C4C4;
+
+  &__group {
+    &__body {
+      display: flex;
+      margin-left: -20px;
+
+      &__item {
+        flex: 1;
+        margin-top: 10px;
+        margin-left: 20px;
+
+        .help-block {
+          color: red;
+          padding-left: 7px;
+        }
+      }
+    }
+  }
+
+  input[type='text'], textarea {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 18px;
+    border: 1px solid #CCB7EB;
+    box-sizing: border-box;
+    border-radius: 7px;
+    outline: none;
+
+    &:focus {
+      box-shadow: 0px 0px 5px #CCB7EB;
+    }
+
+    &::placeholder {
+      color: rgba(31, 31, 31, 0.5);
+    }
+
+    &.-title {
+      height: 60px;
+    }
+  }
+
+  input[type='file'] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  textarea {
+    padding-top: 20px;
+    &.-contacts {
+      min-height: 100px;
+    }
+    &.-description {
+      min-height: 300px;
+    }
+  }
+
+  &__submit {
+    appearance: none;
+    margin-top: 40px;
+    height: 50px;
+    padding: 0 14px;
+    font-style: 18px;
+    background: rgba(204, 183, 235, 0.4);
+    border: 1px solid #CCB7EB;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(204, 183, 235, 0.4);
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+
+    &:focus {
+      box-shadow: 0px 0px 5px #CCB7EB;
+    }
+  }
+
+  &__fileinput {
+    display: block;
+    border: 1px solid #CCB7EB;
+    border-radius: 7px;
+    overflow: hidden;
+    cursor: pointer;
+
+    span {
+      margin-left: 20px;
+    }
+
+    &__button {
+      display: inline-block;
+      background: rgba(204, 183, 235, 0.4);
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+      padding: 14px 18px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.offer_new {
+  .title {
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  &__steps {
+    margin-top: 20px;
+
+    &__item {
+      font-weight: 500;
+    }
+
+    &__description {
+      margin-top: 10px;
+    }
+  }
+}

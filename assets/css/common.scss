@@ -1,4 +1,4 @@
-body {
+body, button, input, optgroup, select, textarea {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
@@ -9,6 +9,10 @@ a {
 
 p {
   margin: 0;
+}
+
+html {
+  line-height: 1.5
 }
 
 .container {
@@ -40,10 +44,14 @@ p {
 }
 
 .title {
+  margin-top: 30px;
   font-weight: 500;
   font-size: 18px;
   color: #4C169C;
-  text-align: center;
+
+  &.-center {
+    text-align: center;
+  }
 }
 
 .badge {
