@@ -36,8 +36,7 @@ module.exports = (env, options) => ({
           },
           MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader',
-            options: {}
+            loader: 'css-loader'
           },
           {
             loader: 'postcss-loader',
@@ -66,6 +65,28 @@ module.exports = (env, options) => ({
             loader: 'svg-inline-loader'
           }
         ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {}
+          },
+          "css-loader"
+        ]
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              publicPath: '/images',
+              name: '[name].[ext]'
+            },
+          },
+        ],
       }
     ]
   },
