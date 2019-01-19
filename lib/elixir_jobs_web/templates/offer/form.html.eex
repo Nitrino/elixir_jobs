@@ -57,7 +57,34 @@
             </div>
             <div class="form__group__body">
                 <div class="form__group__body__item">
-                    <%= textarea f, :description, placeholder: gettext("Описание вакансии"), class: "-description" %>
+                    <div id="toolbar">
+                        <span class="ql-formats">
+                            <select class="ql-header">
+                                <option value="1">Heading</option>
+                                <option value="2">Subheading</option>
+                                <option selected>Normal</option>
+                            </select>
+                        </span>
+                        <span class="ql-formats">
+                            <button class="ql-bold"></button>
+                            <button class="ql-italic"></button>
+                            <button class="ql-underline"></button>
+                        </span>
+                        <span class="ql-formats">
+                            <button class="ql-list" value="ordered"></button>
+                            <button class="ql-list" value="bullet"></button>
+                            <select class="ql-align">
+                                <option label="left" selected></option>
+                                <option label="center" value="center"></option>
+                                <option label="right" value="right"></option>
+                                <option label="justify" value="justify"></option>
+                            </select>
+                        </span>
+                    </div>
+                     <%= hidden_input f, :description, placeholder: gettext("Описание вакансии"), class: "-description" %>
+                    <div id="editor">
+                        <%= f |> Map.get(:data) |> Map.get(:description) |> raw %>
+                    </div>
                     <%= error_tag f, :description %>
                 </div>
             </div>
