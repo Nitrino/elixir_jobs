@@ -1,4 +1,4 @@
-export default function (selector) {
+function customFileSelect(selector) {
     const inputs = document.querySelectorAll(selector);
     for (let input of inputs) {
         const label = input.nextElementSibling
@@ -20,3 +20,5 @@ export default function (selector) {
         });
     }
 };
+
+customFileSelect("input.-file");
