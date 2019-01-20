@@ -4,7 +4,7 @@
   </div>
   <div class="events__items">
     <%= for event <- @events do %>
-      <%= link to: Routes.event_path(@conn, :show, event), class: "events__item" do %>
+      <%= link to: event.link, class: "events__item", target: "_blank", rel: "noopener noreferrer nofollow" do %>
         <div class="events__item__logo">
           <%= img_tag(event.logo) %>
         </div>
