@@ -53,17 +53,5 @@
     &__options {
       text-align: right;
     }
-
-    &__badges {
-      margin-top: 7px;
-
-      > div {
-        display: inline-block;
-      }
-
-      &__job_place {
-        margin-right: 10px;
-      }
-    }
   }
 }

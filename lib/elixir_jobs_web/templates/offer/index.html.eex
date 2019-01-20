@@ -30,13 +30,13 @@
           <div class="offers__item__salary">
             <%= offer.salary %>
           </div>
-          <div class="offers__item__badges">
-            <div class="offers__item__badges__job_place badge -light">
-                <%= offer.job_place %>
-            </div>
-            <div class="offers__item__badges__job_type badge -dark">
-                <%= offer.job_type %>
-            </div>
+          <div class="badges">
+              <div class="badge -light -job_place">
+                  <%= offer.job_place %>
+              </div>
+              <div class="badge -dark">
+                  <%= offer.job_type %>
+              </div>
           </div>
         </div>
       <% end %>

@@ -1,0 +1,43 @@
+.offer_show {
+  margin-top: 40px;
+  padding-bottom: 30px;
+
+  h1 {
+    font-size: 36px;
+    color: #5C18BF;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  &__place {
+    font-style: 18px;
+    font-weight: 300;
+  }
+
+  &__salary {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  &__description {
+    margin-top: 40px;
+    line-height: 1.75;
+  }
+
+  &__contacts {
+    margin-top: 20px;
+
+    &__title {
+      font-weight: 600;
+    }
+  }
+
+  &__date {
+    margin-top: 10px;
+
+    &__title {
+      font-weight: 600;
+    }
+  }
+}

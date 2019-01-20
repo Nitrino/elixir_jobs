@@ -12,7 +12,8 @@ p {
 }
 
 html {
-  line-height: 1.5
+  line-height: 1.5;
+  color: #1F1F1F;
 }
 
 .container {
@@ -54,19 +55,32 @@ html {
   }
 }
 
-.badge {
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-weight: 500;
-  font-size: 12px;
-  color: #FFFFFF;
-  text-transform: uppercase;
 
-  &.-light {
-    background: #9322C4;
+.badges {
+  margin-top: 7px;
+
+  > div {
+    display: inline-block;
   }
 
-  &.-dark {
-    background: #5C18BF;
+  .badge{
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    &.-job_place {
+      margin-right: 10px;
+    }
+
+    &.-light {
+      background: #9322C4;
+    }
+
+    &.-dark {
+      background: #5C18BF;
+    }
   }
 }
