@@ -13,7 +13,6 @@ import "phoenix_html"
 
 require("./flatpickr")
 require("./customFileSelect")
-require("./quill")
 
 // Import local files
 //

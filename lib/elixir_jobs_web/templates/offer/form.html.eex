@@ -88,8 +88,6 @@
                     <%= error_tag f, :description %>
                 </div>
             </div>
-            <div class="form__group__errors">
-            </div>
         </div>
         <div class="form__group">
             <div class="title">

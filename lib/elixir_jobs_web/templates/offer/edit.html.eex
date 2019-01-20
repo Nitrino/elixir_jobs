@@ -3,3 +3,4 @@
 </div>
 
 <%= render "form.html", Map.put(assigns, :action, Routes.offer_path(@conn, :update, @offer)) %>
+<script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/quill.js") %>"></script>
