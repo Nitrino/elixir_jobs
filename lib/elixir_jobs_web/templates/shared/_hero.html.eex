@@ -3,7 +3,7 @@
         <header class="header">
             <%= link(gettext("Elixir jobs"), to: Routes.offer_path(@conn, :index), class: "header__logo") %>
             <div class="header__navigation">
-                <%= link(gettext("О проекте"), to: "/about", class: "header__navigation__about") %>
+                <%= link(gettext("О проекте"), to: Routes.page_path(@conn, :about), class: "header__navigation__about") %>
                 <div class="header__navigation__social_networks">
                     <%= link to: "https://twitter.com/ErlangJobs", target: "_blank", rel: "noopener noreferrer nofollow" do %>
                         <%= img_tag(Routes.static_path(@conn, "/images/icons/twitter.svg")) %>
