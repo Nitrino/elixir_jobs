@@ -57,12 +57,9 @@ html {
 
 .badges {
   margin-top: 7px;
+  display: inline-flex;
 
-  > div {
-    display: inline-block;
-  }
-
-  .badge{
+  .badge {
     padding: 8px 12px;
     border-radius: 6px;
     font-weight: 500;
