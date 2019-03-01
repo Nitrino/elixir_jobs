@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="offers__item__description">
-                <%= offer.description %>
+                <%= offer.description |> HtmlSanitizeEx.strip_tags |> Curtail.truncate(length: 450) %>
             </div>
         </div>
         <div class="offers__item__options">

@@ -43,12 +43,17 @@ defmodule ElixirJobs.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-
       {:timex, "~> 3.4"},
 
-      # Pagination
+      # Pagination and HTML
       {:scrivener_ecto, "~> 2.0"},
-      {:scrivener_html, "~> 1.0", override: true}
+      {:scrivener_html, "~> 1.0", override: true},
+      {:curtail, "~> 1.0"},
+      {:html_sanitize_ex, "~> 1.3.0"},
+
+      # Testing
+      {:ex_machina, "~> 2.2", only: :test},
+      {:mox, "~> 0.4.0", only: :test}
     ]
   end
 
