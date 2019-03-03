@@ -1,0 +1,279 @@
+## This file is a PO Template file.
+##
+## `msgid`s here are often extracted from source code.
+## Add new translations manually only if they're dynamic
+## translations that can't be statically extracted.
+##
+## Run `mix gettext.extract` to bring this file up to
+## date. Leave `msgstr`s empty as changing them here as no
+## effect: edit them in PO (`.po`) files instead.
+msgid ""
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/new.html.eex:7
+msgid "1. Заполните форму добавления вакансии"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/new.html.eex:10
+msgid "2. Дождитесь публикации"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/shared/_hero.html.eex:4
+#: lib/elixir_jobs_web/templates/shared/_hero.html.eex:21
+msgid "Elixir jobs"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/page/about.html.eex:7
+msgid "ErlangJobs.ru является некоммерческим проектом. Основная цель и идея разработки - популяризация технологии в России и странах СНГ и поддержка сообщества разработчиков."
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/shared/_footer.html.eex:12
+msgid "Powered by %{elixir_link} and %{phoenix_link}."
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/shared/_promotion.html.eex:5
+msgid "Будь в курсе последних вакансий с нашим Telegram каналом"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/shared/_footer.html.eex:22
+msgid "Быть в курсе последних вакансий"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/new.html.eex:3
+msgid "Всего 2 простых шага, чтобы опубликовать вакансию:"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/event/form.html.eex:19
+#: lib/elixir_jobs_web/templates/event/form.html.eex:27
+msgid "Где?"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:30
+msgid "Город"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/event/form.html.eex:31
+msgid "Дата и время"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/show.html.eex:30
+msgid "Дата публикации:"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/shared/_hero.html.eex:25
+msgid "Добавить вакансию"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/shared/_footer.html.eex:6
+msgid "Если у вас есть предложения или вопросы, создайте тикет на %{github_link}."
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:11
+msgid "Заголовок"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/event/form.html.eex:51
+msgid "Загрузка фото"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:49
+msgid "Зарплата"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/page/about.html.eex:13
+msgid "Зачем мне публиковать вакансии здесь?"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:98
+msgid "Имя, телефон, e-mail, соц. сети"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/page/about.html.eex:31
+msgid "Код проекта на GitHub."
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:22
+msgid "Компания"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:94
+msgid "Контакты для связи"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/show.html.eex:24
+msgid "Контакты:"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:15
+msgid "Кто вам нужен?"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/new.html.eex:13
+msgid "Мы проверим ваше предложение на спам и наличие мертвых ссылок и, если все заполнено верно, опубликуем его как можно скорее. Вы можете внести изменения в уже добавленную вами вакансию, написав нам на почту."
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:26
+msgid "Название"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/event/form.html.eex:11
+msgid "Название мероприятия"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/shared/_hero.html.eex:6
+msgid "О проекте"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:37
+msgid "О работе"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:56
+msgid "Описание"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:84
+msgid "Описание вакансии"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/event/form.html.eex:71
+#: lib/elixir_jobs_web/templates/offer/form.html.eex:115
+msgid "Опубликовать"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/page/about.html.eex:28
+msgid "По всем интересующим вопросам и предложениям вы можете писать мне на почту или в Telegram."
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/shared/_promotion.html.eex:8
+msgid "Подписаться"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/event/new.html.eex:10
+msgid "После заполнения формы предложенное вами мероприятие отправится на проверку модераторам и, если все заполнено верно, оно появится на главной странице сайта."
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/page/about.html.eex:16
+msgid "Потому что все вакансии публикуются бесплатно. Это поможет вам найти подходящего Elixir-разработчика, ведь вакансии транслируются в Twitter и Telegram каналы, где их видят ваши потенциальные работники."
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/event/index.html.eex:3
+msgid "Предстоящие события"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/shared/_hero.html.eex:22
+msgid "Публикация совершенно бесплатна и не требует регистрации."
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/page/about.html.eex:19
+msgid "Размещаемая информация передается \"as is\" и принадлежит ее авторам."
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/offer/edit.html.eex:2
+msgid "Редактирование вакансии"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/event/edit.html.eex:2
+msgid "Редактирование события"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/page/about.html.eex:25
+msgid "С кем я могу связаться?"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/event/new.html.eex:3
+msgid "Скоро будет интересное событие, посвященное Elixir или Erlang? "
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/event/new.html.eex:7
+msgid "Сообщите нам об этом!"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/event/form.html.eex:40
+msgid "Ссылка на событие"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/page/about.html.eex:4
+msgid "Что такое ElixirJobs?"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/templates/shared/_hero.html.eex:28
+msgid "или предложить событие"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/views/offer_view.ex:42
+msgid "both"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/views/offer_view.ex:34
+msgid "freelance"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/views/offer_view.ex:32
+msgid "full_time"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/views/offer_view.ex:40
+msgid "onsite"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/views/offer_view.ex:33
+msgid "part_time"
+msgstr ""
+
+#, elixir-format
+#: lib/elixir_jobs_web/views/offer_view.ex:41
+msgid "remote"
+msgstr ""

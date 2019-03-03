@@ -44,6 +44,7 @@ defmodule ElixirJobs.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:timex, "~> 3.4"},
+      {:ecto_enum, "~> 1.2"},
 
       # Pagination and HTML
       {:scrivener_ecto, "~> 2.0"},

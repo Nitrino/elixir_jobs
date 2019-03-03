@@ -38,11 +38,11 @@
             </div>
             <div class="form__group__body">
                 <div class="form__group__body__item">
-                    <%= text_input f, :job_type %>
+                    <%= select(f, :job_type, job_type_options()) %>
                     <%= error_tag f, :job_type %>
                 </div>
                 <div class="form__group__body__item">
-                    <%= text_input f, :job_place %>
+                    <%= select(f, :job_place, job_place_options()) %>
                     <%= error_tag f, :job_place %>
                 </div>
                 <div class="form__group__body__item">
